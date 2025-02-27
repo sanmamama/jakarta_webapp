@@ -51,7 +51,7 @@
         <div class="col s12 m8 offset-m2">
             <div class="card z-depth-3">
                 <div class="card-content">
-                    <span class="card-title center teal-text">🔍 1冊の好きな本からあなたの性格を診断します</span>
+                    <span class="card-title center teal-text">🔍 あなたの好きな1冊の本から性格を診断します</span>
                     <form action="search" method="GET">
                         <div class="input-field">
                             <i class="material-icons prefix">book</i>

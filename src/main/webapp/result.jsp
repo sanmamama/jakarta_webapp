@@ -50,7 +50,7 @@
         <div class="col s12 m8 offset-m2">
             <div class="card z-depth-3">
                 <div class="card-content">
-                    <span class="card-title center teal-text">🔍 検索結果</span>
+                    <span class="card-title center teal-text">🔍 結果</span>
 
                     <% if (books != null && !books.isEmpty()) { %>
                         <ul class="collection">

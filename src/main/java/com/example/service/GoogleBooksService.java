@@ -51,7 +51,7 @@ public class GoogleBooksService {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            
+            // return "エラー: " + e.toString();
             bookList.add(new Book("exception", "exception", e.toString()));
         }
         return bookList;

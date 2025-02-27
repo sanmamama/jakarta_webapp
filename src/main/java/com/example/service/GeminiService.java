@@ -12,7 +12,8 @@ import io.github.cdimascio.dotenv.Dotenv;
 
 public class GeminiService {
     private static final Dotenv dotenv = Dotenv.configure()
-        .directory("C:/Users/user/Documents/GitHub/jakarta_webapp/src/main/resources")
+        //.directory("C:/Users/user/Documents/GitHub/jakarta_webapp/src/main/resources")
+		.directory("./")
         .ignoreIfMalformed()
         .ignoreIfMissing()
         .load();
@@ -25,9 +26,6 @@ public class GeminiService {
             if (API_KEY == null || API_KEY.isEmpty()) {
                 return "エラー: API_KEYが設定されていません";
             }
-			// if(description.length() < 30){
-			// 	return "エラー：本の情報が得られませんでした";
-			// }
 
             // **リクエストの JSON データ (`temperature` を削除)**
             String requestBody = "{"

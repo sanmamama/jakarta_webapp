@@ -32,10 +32,10 @@ public class SearchServlet extends HttpServlet {
         List<Book> books = booksService.searchBooks(title, author);
 
         // **最初の本の description を取得**
-        String description = books.isEmpty() ? "本の説明が見つかりません" : books.get(0).getDescription();
+        String description = books.isEmpty() ? "本が見つかりません" : books.get(0).getDescription();
 
         // **Gemini API で分析**
-        String personalityAnalysis = geminiService.analyzeReaderPersonality(description);
+        String personalityAnalysis = books.isEmpty() ? "本が見つかりません":geminiService.analyzeReaderPersonality(description);
 
         // **検索結果を JSP に渡す**
         request.setAttribute("books", books);
