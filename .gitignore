@@ -1,3 +1,5 @@
 autodeploy.lnk
 pom.xml
 /target
+src/main/resources/.env
+restart.bat
